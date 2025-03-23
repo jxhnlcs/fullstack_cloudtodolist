@@ -1,0 +1,32 @@
+<div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
+  <h2 class="text-2xl font-semibold text-blue-600 mb-6">
+    {{ isEdit ? '✏️ Editar Tarefa' : '➕ Nova Tarefa' }}
+  </h2>
+
+  <form (ngSubmit)="salvar()" class="space-y-4">
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Título</label>
+      <input [(ngModel)]="tarefa.titulo" name="titulo" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-blue-500 focus:outline-none" />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Descrição</label>
+      <textarea [(ngModel)]="tarefa.descricao" name="descricao" rows="3" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-blue-500 focus:outline-none"></textarea>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+      <select [(ngModel)]="tarefa.status" name="status" class="w-full border border-gray-300 rounded-md px-3 py-2">
+        <option value="pendente">Pendente</option>
+        <option value="concluida">Concluída</option>
+      </select>
+    </div>
+
+    <div class="flex justify-end gap-4">
+      <button type="button" (click)="cancelar()" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md">Cancelar</button>
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
+        {{ isEdit ? 'Atualizar' : 'Salvar' }}
+      </button>
+    </div>
+  </form>
+</div>
