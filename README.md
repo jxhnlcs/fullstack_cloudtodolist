@@ -75,3 +75,12 @@ cd frontend
 npm install
 ng serve
 ```
+
+## 🚀 Deploys (em breve)
+
+Atualmente, o projeto está pronto para deploy. Em breve serão adicionadas as instruções completas para:
+
+- ✅ Deploy do Backend com Spring Boot na AWS EC2
+- ✅ Deploy do Frontend Angular no S3 + CloudFront como SPA
+
+Essas etapas permitirão que o sistema fique 100% acessível em nuvem.
