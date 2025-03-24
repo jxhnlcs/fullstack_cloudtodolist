@@ -8,12 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { TarefaFormComponent } from './pages/tarefa-form/tarefa-form.component';
+import { ToastComponent } from './components/toast/toast.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TarefaFormComponent
+    TarefaFormComponent,
+    ToastComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
