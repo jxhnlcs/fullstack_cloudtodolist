@@ -1,8 +1,10 @@
 <div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
   <div class="flex items-center justify-between mb-6">
-    <h2 class="text-2xl font-bold text-gray-800">📋 Lista de Tarefas</h2>
+    <h2 class="text-2xl font-bold text-gray-800">
+      <i class="fas fa-list-check mr-2"></i> Lista de Tarefas
+    </h2>
     <button (click)="nova()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
-      ➕ Nova Tarefa
+      <i class="fas fa-plus mr-2"></i> Nova Tarefa
     </button>
   </div>
 
@@ -21,10 +23,10 @@
 
     <div class="mt-4 flex gap-3">
       <button (click)="editar(tarefa.id!)" class="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded-md">
-        ✏️ Editar
+        <i class="fas fa-edit mr-1"></i> Editar
       </button>
       <button (click)="excluir(tarefa.id!)" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-md">
-        🗑️ Excluir
+        <i class="fas fa-trash-alt mr-1"></i> Excluir
       </button>
     </div>
   </div>

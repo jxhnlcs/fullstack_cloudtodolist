@@ -1,6 +1,7 @@
 <div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
   <h2 class="text-2xl font-semibold text-blue-600 mb-6">
-    {{ isEdit ? '✏️ Editar Tarefa' : '➕ Nova Tarefa' }}
+    <i class="fas" [ngClass]="isEdit ? 'fa-pen-to-square' : 'fa-plus'"></i>
+    {{ isEdit ? ' Editar Tarefa' : ' Nova Tarefa' }}
   </h2>
 
   <form (ngSubmit)="salvar()" class="space-y-4">
